@@ -31,5 +31,16 @@ values ("Relógio", "Acessório", 500.00, "Apple");
 INSERT INTO tb_produtos(nome, categoria, preco, marca)
 values ("Lâmpada Led", "Casa", 10.00, "Eletrolux");
 
+ALTER TABLE tb_produtos ADD lote bigint;
+
+UPDATE tb_produtos SET lote = 87438 WHERE id = 1;
+UPDATE tb_produtos SET lote = 54889 WHERE id = 2;
+UPDATE tb_produtos SET lote = 15495 WHERE id = 3;
+UPDATE tb_produtos SET lote = 51512 WHERE id = 4;
+UPDATE tb_produtos SET lote = 55158 WHERE id = 5;
+UPDATE tb_produtos SET lote = 78954 WHERE id = 6;
+UPDATE tb_produtos SET lote = 65499 WHERE id = 7;
+UPDATE tb_produtos SET lote = 28987 WHERE id = 8;
+
 SELECT * FROM tb_produtos WHERE preco > 500;
 SELECT * FROM tb_produtos WHERE preco < 500;

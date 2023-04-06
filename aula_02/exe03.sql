@@ -29,5 +29,16 @@ values ("Ana Vitoria", 4, 10, 15);
 INSERT INTO tb_alunos(nome, turma, nota, idade)
 values ("Lucas", 4, 8, 15);
 
+ALTER TABLE tb_alunos ADD email varchar(255);
+UPDATE tb_alunos SET email = "ana@hotmail.com" WHERE id = 1;
+UPDATE tb_alunos SET email = "leo@hotmail.com" WHERE id = 8;
+UPDATE tb_alunos SET email = "julio@hotmail.com" WHERE id = 7;
+UPDATE tb_alunos SET email = "juliana@hotmail.com" WHERE id = 6;
+UPDATE tb_alunos SET email = "pedro@hotmail.com" WHERE id = 5;
+UPDATE tb_alunos SET email = "joao@hotmail.com" WHERE id = 4;
+UPDATE tb_alunos SET email = "anavitoria@hotmail.com" WHERE id = 3;
+UPDATE tb_alunos SET email = "lucas@hotmail.com" WHERE id = 2;
+
+
 SELECT * FROM tb_alunos WHERE nota > 7.0;
 SELECT * FROM tb_alunos WHERE nota < 7.0;
