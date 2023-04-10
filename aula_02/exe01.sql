@@ -30,8 +30,6 @@ ALTER TABLE tb_colaboradores DROP sexo;
 UPDATE tb_colaboradores SET salario = 3000 WHERE cpf > 30000000000;
 UPDATE tb_colaboradores SET salario = 1500 WHERE cpf < 30000000000;
 
-SET SQL_SAFE_UPDATES = 0;
-
 ALTER TABLE tb_colaboradores ADD email varchar(255);
 UPDATE tb_colaboradores SET email = "ana@hotmail.com" WHERE nome = "Ana";
 UPDATE tb_colaboradores SET email = "camille@hotmail.com" WHERE nome = "Camille";
